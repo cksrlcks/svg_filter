@@ -47,15 +47,11 @@ export default class MarqueeNav {
             .set(this.overlayPath, {
                 attr: { d: paths.step1.unfilled },
             })
-            .to(
-                this.overlayPath,
-                {
-                    duration: 0.8,
-                    ease: "power4.in",
-                    attr: { d: paths.step1.inBetween.curve1 },
-                },
-                0
-            )
+            .to(this.overlayPath, {
+                duration: 0.8,
+                ease: "power4.in",
+                attr: { d: paths.step1.inBetween.curve1 },
+            })
             .to(this.overlayPath, {
                 duration: 0.2,
                 ease: "power1",

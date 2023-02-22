@@ -5,11 +5,11 @@ html {
 body {
     background: #fff;
     color: #000;
-    overflow-x: hidden;
     font-family: Gloock, sans-serif;
 }
 .app {
     background: #f3efe6;
+    overflow: hidden;
 }
 .header {
     position: fixed;
@@ -169,7 +169,7 @@ body {
 .screen {
     background: #f3efe6;
     position: relative;
-    padding-bottom: 400px;
+    pointer-events: none;
 }
 
 .screen__top {
@@ -192,6 +192,8 @@ body {
     padding: 6vh 1vw 6vh;
     box-shadow: 0 1px #000;
     cursor: pointer;
+    pointer-events: auto;
+    margin-bottom: 10px;
 }
 .screen__title {
     font-size: 6vw;
@@ -215,4 +217,14 @@ body {
 .distort image {
     opacity: 0;
     transition: opacity 0.2s;
+    position: relative;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+.distort image.on {
+    opacity: 1;
+}
+
+.footer {
+    height: 500px;
 }
