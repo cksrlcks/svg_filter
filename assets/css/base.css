@@ -1,0 +1,194 @@
+@charset "utf-8";
+/*
+*   name : uxis css reset
+*   date : 2021.07.07 
+*/
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+/* a */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:visited,
+a:visited *,
+a.visited,
+a.visited:visited {
+    text-decoration: none;
+}
+a:hover,
+a:hover *,
+a.visited:hover {
+    text-decoration: none;
+}
+
+/*list*/
+ol,
+ul,
+li,
+dd,
+dl,
+dt {
+    list-style: none;
+}
+
+/* Form */
+fieldset {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+legend {
+    display: none;
+}
+
+/* reset - input */
+input {
+    font-family: inherit;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: background-color 5000s;
+    transition: background-color 5000s;
+    -webkit-text-fill-color: #333 !important;
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+}
+input::-ms-check {
+    -ms-filter: alpha(opacity=0);
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+/* reset - button */
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* reset - select */
+select {
+    font-family: inherit;
+}
+select::-ms-expand {
+    display: none;
+}
+
+/* reset - textarea */
+textarea {
+    font-family: inherit;
+}
+
+/* reset - table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+table caption {
+    text-indent: -9999px;
+    font-size: 0;
+}
+
+/* img */
+img {
+    border: 0px;
+    vertical-align: top;
+}
